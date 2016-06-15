@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'spec_helper'
 require 'fizzbuzz'
 
@@ -12,6 +13,10 @@ describe 'FizzBuzz#say' do
   context '3の倍数でも5の倍数でもない場合' do
     it "数字を返す_例2" do
       expect( subject.say(2) ).to eq '2'
+    end
+
+    it "数字を返す_例4" do
+      expect( subject.say(4) ).to eq '4'
     end
   end
 end
